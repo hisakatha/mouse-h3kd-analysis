@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="Mus_musculus.GRCm38.dna_sm.primary_assembly.fa" locus="10:38369941-40707063" nextAutoscaleGroup="3" version="8">
+    <Resources>
+        <Resource path="read_template.NoRibs_2c_18hpi201218.bed.tdf" type="tdf"/>
+        <Resource path="read_template.NoRibs_2c_Control201218.bed.tdf" type="tdf"/>
+        <Resource path="read_template.NoRibs_2c_Aphidicoilin201218.bed.tdf" type="tdf"/>
+        <Resource path="read_template.NoRibs_MII201209.bed.tdf" type="tdf"/>
+        <Resource path="read_template.NoRibs_2cAphidicolin201209.bed.tdf" type="tdf"/>
+        <Resource path="read_template.NoRibs_MII201218.bed.tdf" type="tdf"/>
+        <Resource path="read_template.NoRibs_2c_H3_1_3_2KD201218.bed.tdf" type="tdf"/>
+        <Resource path="Mus_musculus.GRCm38.102.sorted.gene_and_nc.gff3" type="gff3"/>
+        <Resource path="read_template.NoRibs_2c_Noinjection201218.bed.tdf" type="tdf"/>
+        <Resource path="read_template.NoRibs_2c_Control201209.bed.tdf" type="tdf"/>
+        <Resource path="read_template.NoRibs_2c_18hpi201209.bed.tdf" type="tdf"/>
+        <Resource path="read_template.NoRibs_2c_Noinjection201209.bed.tdf" type="tdf"/>
+        <Resource path="read_template.NoRibs_2c_H3_1_3_2KD201209.bed.tdf" type="tdf"/>
+    </Resources>
+    <Panel height="623" name="DataPanel" width="1889">
+        <Track attributeKey="read_template.NoRibs_MII201209.bed.tdf" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_MII201209.bed.tdf" name="MII #1" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="700.3979" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_MII201218.bed.tdf" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_MII201218.bed.tdf" name="MII #2" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="669.2801" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_18hpi201209.bed.tdf" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_18hpi201209.bed.tdf" name="2C 18hpi #1" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="321.50903" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_18hpi201218.bed.tdf" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_18hpi201218.bed.tdf" name="2C 18hpi #2" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="398.98306" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_Noinjection201209.bed.tdf" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_Noinjection201209.bed.tdf" name="2C No Injection #1" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="378.61053" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_Noinjection201218.bed.tdf" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_Noinjection201218.bed.tdf" name="2C No Injection #2" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="260.8679" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_Control201209.bed.tdf" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_Control201209.bed.tdf" name="2C Control #1" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="264.29675" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_Control201218.bed.tdf" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_Control201218.bed.tdf" name="2C Control #2" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="304.7485" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_H3_1_3_2KD201209.bed.tdf" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_H3_1_3_2KD201209.bed.tdf" name="2C H3.1/3.2 KD #1" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="315.5404" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_H3_1_3_2KD201218.bed.tdf" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_H3_1_3_2KD201218.bed.tdf" name="2C H3.1/3.2 KD #2" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="263.91174" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2cAphidicolin201209.bed.tdf" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" colorScale="ContinuousColorScale;0.0;416.1632080078125;255,255,255;0,0,178" fontSize="10" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2cAphidicolin201209.bed.tdf" name="2C DNA(-) #1" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="416.1632" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_Aphidicoilin201218.bed.tdf" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_Aphidicoilin201218.bed.tdf" name="2C DNA(-) #2" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="298.22955" minimum="0.0" type="LINEAR"/>
+        </Track>
+    </Panel>
+    <Panel height="146" name="FeaturePanel" width="1889">
+        <Track attributeKey="Reference sequence" clazz="org.broad.igv.track.SequenceTrack" fontSize="10" id="Reference sequence" name="Reference sequence" sequenceTranslationStrandValue="POSITIVE" shouldShowTranslation="false" visible="true"/>
+        <Track attributeKey="Mus_musculus.GRCm38.102.sorted.gene_and_nc.gff3" clazz="org.broad.igv.track.FeatureTrack" colorScale="ContinuousColorScale;0.0;193.0;255,255,255;0,0,178" displayMode="EXPANDED" fontSize="10" groupByStrand="false" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/Mus_musculus.GRCm38.102.sorted.gene_and_nc.gff3" name="Genes and ncRNAs" visible="true"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.8054123711340206"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>

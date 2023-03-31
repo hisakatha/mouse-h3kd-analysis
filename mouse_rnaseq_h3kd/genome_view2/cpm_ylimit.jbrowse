@@ -1,0 +1,1139 @@
+{
+  "configuration": {
+    "rpc": {
+      "defaultDriver": "WebWorkerRpcDriver",
+      "drivers": {
+        "MainThreadRpcDriver": {},
+        "WebWorkerRpcDriver": {}
+      }
+    },
+    "logoPath": {
+      "locationType": "UriLocation",
+      "uri": ""
+    }
+  },
+  "plugins": [],
+  "assemblies": [
+    {
+      "name": "mm10",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "mm10-1646726703690",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "locationType": "LocalPathLocation",
+            "localPath": "/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/Mus_musculus.GRCm38.dna_sm.primary_assembly.fa"
+          },
+          "faiLocation": {
+            "locationType": "LocalPathLocation",
+            "localPath": "/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/Mus_musculus.GRCm38.dna_sm.primary_assembly.fa.fai"
+          }
+        },
+        "displays": [
+          {
+            "type": "LinearReferenceSequenceDisplay",
+            "displayId": "mm10-1646726703690-LinearReferenceSequenceDisplay"
+          }
+        ]
+      },
+      "displayName": "Mus musculus (mm10)"
+    }
+  ],
+  "tracks": [
+    {
+      "type": "FeatureTrack",
+      "trackId": "mus_musculus.grcm38.102.sorted.gene_and_nc.gff3.gz-1646730516181",
+      "name": "Genes and ncRNAs",
+      "assemblyNames": [
+        "mm10"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "locationType": "LocalPathLocation",
+          "localPath": "/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/Mus_musculus.GRCm38.102.sorted.gene_and_nc.gff3.gz"
+        },
+        "index": {
+          "location": {
+            "locationType": "LocalPathLocation",
+            "localPath": "/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/Mus_musculus.GRCm38.102.sorted.gene_and_nc.gff3.gz.tbi"
+          }
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "mus_musculus.grcm38.102.sorted.gene_and_nc.gff3.gz-1646730516181-LinearBasicDisplay"
+        },
+        {
+          "type": "LinearArcDisplay",
+          "displayId": "mus_musculus.grcm38.102.sorted.gene_and_nc.gff3.gz-1646730516181-LinearArcDisplay"
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "mii_#1-1646730823837",
+      "name": "MII #1",
+      "assemblyNames": [
+        "mm10"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "locationType": "LocalPathLocation",
+          "localPath": "/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_MII201209.bed.cpm.bigWig"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "mii_#1-1646730823837-LinearWiggleDisplay"
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "mii_#2-1646731359915",
+      "name": "MII #2",
+      "assemblyNames": [
+        "mm10"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "locationType": "LocalPathLocation",
+          "localPath": "/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_MII201218.bed.cpm.bigWig"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "mii_#2-1646731359915-LinearWiggleDisplay"
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "2c_18hpi_#1-1646731424804",
+      "name": "2C 18hpi #1",
+      "assemblyNames": [
+        "mm10"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "locationType": "LocalPathLocation",
+          "localPath": "/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_18hpi201209.bed.cpm.bigWig"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "2c_18hpi_#1-1646731424804-LinearWiggleDisplay"
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "2c_18hpi_#2-1646731463806",
+      "name": "2C 18hpi #2",
+      "assemblyNames": [
+        "mm10"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "locationType": "LocalPathLocation",
+          "localPath": "/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_18hpi201218.bed.cpm.bigWig"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "2c_18hpi_#2-1646731463806-LinearWiggleDisplay"
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "2c_control_#1-1646731560184",
+      "name": "2C Control #1",
+      "assemblyNames": [
+        "mm10"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "locationType": "LocalPathLocation",
+          "localPath": "/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_Control201209.bed.cpm.bigWig"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "2c_control_#1-1646731560184-LinearWiggleDisplay"
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "2c_control_#2-1646731588566",
+      "name": "2C Control #2",
+      "assemblyNames": [
+        "mm10"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "locationType": "LocalPathLocation",
+          "localPath": "/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_Control201218.bed.cpm.bigWig"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "2c_control_#2-1646731588566-LinearWiggleDisplay"
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "2c_no_injection_#1-1646731624702",
+      "name": "2C No Injection #1",
+      "assemblyNames": [
+        "mm10"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "locationType": "LocalPathLocation",
+          "localPath": "/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_Noinjection201209.bed.cpm.bigWig"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "2c_no_injection_#1-1646731624702-LinearWiggleDisplay"
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "2c_no_injection_#2-1646731659961",
+      "name": "2C No Injection #2",
+      "assemblyNames": [
+        "mm10"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "locationType": "LocalPathLocation",
+          "localPath": "/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_Noinjection201218.bed.cpm.bigWig"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "2c_no_injection_#2-1646731659961-LinearWiggleDisplay"
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "2c_h3.1/3.2_kd_#1-1646731725516",
+      "name": "2C H3.1/3.2 KD #1",
+      "assemblyNames": [
+        "mm10"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "locationType": "LocalPathLocation",
+          "localPath": "/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_H3_1_3_2KD201209.bed.cpm.bigWig"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "2c_h3.1/3.2_kd_#1-1646731725516-LinearWiggleDisplay"
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "2c_h3.1/3.2_kd_#2-1646731758809",
+      "name": "2C H3.1/3.2 KD #2",
+      "assemblyNames": [
+        "mm10"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "locationType": "LocalPathLocation",
+          "localPath": "/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_H3_1_3_2KD201218.bed.cpm.bigWig"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "2c_h3.1/3.2_kd_#2-1646731758809-LinearWiggleDisplay"
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "2c_dna(-)_#1-1646731806319",
+      "name": "2C DNA(-) #1",
+      "assemblyNames": [
+        "mm10"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "locationType": "LocalPathLocation",
+          "localPath": "/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2cAphidicolin201209.bed.cpm.bigWig"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "2c_dna(-)_#1-1646731806319-LinearWiggleDisplay"
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "2c_dna(-)_#2-1646731833444",
+      "name": "2C DNA(-) #2",
+      "assemblyNames": [
+        "mm10"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "locationType": "LocalPathLocation",
+          "localPath": "/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_Aphidicoilin201218.bed.cpm.bigWig"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "2c_dna(-)_#2-1646731833444-LinearWiggleDisplay"
+        }
+      ]
+    }
+  ],
+  "internetAccounts": [
+    {
+      "type": "DropboxOAuthInternetAccount",
+      "internetAccountId": "dropboxOAuth",
+      "name": "Dropbox",
+      "description": "OAuth Info for Dropbox",
+      "authEndpoint": "https://www.dropbox.com/oauth2/authorize",
+      "tokenEndpoint": "https://api.dropbox.com/oauth2/token",
+      "needsAuthorization": true,
+      "needsPKCE": true,
+      "clientId": "ykjqg1kr23pl1i7",
+      "domains": [
+        "addtodropbox.com",
+        "db.tt",
+        "dropbox.com",
+        "dropboxapi.com",
+        "dropboxbusiness.com",
+        "dropbox.tech",
+        "getdropbox.com"
+      ],
+      "hasRefreshToken": true
+    },
+    {
+      "type": "GoogleDriveOAuthInternetAccount",
+      "internetAccountId": "googleOAuth",
+      "name": "Google",
+      "description": "OAuth Info for Google Drive",
+      "authEndpoint": "https://accounts.google.com/o/oauth2/v2/auth",
+      "needsAuthorization": true,
+      "clientId": "109518325434-m86s8a5og8ijc5m6n7n8dk7e9586bg9i.apps.googleusercontent.com",
+      "scopes": "https://www.googleapis.com/auth/drive.readonly",
+      "domains": [
+        "drive.google.com"
+      ],
+      "responseType": "token"
+    }
+  ],
+  "aggregateTextSearchAdapters": [],
+  "connections": [],
+  "defaultSession": {
+    "name": "Template CPM",
+    "margin": 0,
+    "drawerWidth": 384,
+    "views": [
+      {
+        "id": "-rX1iDP1R",
+        "type": "LinearGenomeView",
+        "offsetPx": 82426,
+        "bpPerPx": 4951.980816853841,
+        "displayedRegions": [
+          {
+            "refName": "1",
+            "start": 0,
+            "end": 195471971,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "2",
+            "start": 0,
+            "end": 182113224,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "3",
+            "start": 0,
+            "end": 160039680,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "4",
+            "start": 0,
+            "end": 156508116,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "5",
+            "start": 0,
+            "end": 151834684,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "6",
+            "start": 0,
+            "end": 149736546,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "7",
+            "start": 0,
+            "end": 145441459,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "8",
+            "start": 0,
+            "end": 129401213,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "9",
+            "start": 0,
+            "end": 124595110,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "10",
+            "start": 0,
+            "end": 130694993,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "11",
+            "start": 0,
+            "end": 122082543,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "12",
+            "start": 0,
+            "end": 120129022,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "13",
+            "start": 0,
+            "end": 120421639,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "14",
+            "start": 0,
+            "end": 124902244,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "15",
+            "start": 0,
+            "end": 104043685,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "16",
+            "start": 0,
+            "end": 98207768,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "17",
+            "start": 0,
+            "end": 94987271,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "18",
+            "start": 0,
+            "end": 90702639,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "19",
+            "start": 0,
+            "end": 61431566,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "MT",
+            "start": 0,
+            "end": 16299,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "X",
+            "start": 0,
+            "end": 171031299,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "Y",
+            "start": 0,
+            "end": 91744698,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "JH584299.1",
+            "start": 0,
+            "end": 953012,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456233.1",
+            "start": 0,
+            "end": 336933,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "JH584301.1",
+            "start": 0,
+            "end": 259875,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456211.1",
+            "start": 0,
+            "end": 241735,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456350.1",
+            "start": 0,
+            "end": 227966,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "JH584293.1",
+            "start": 0,
+            "end": 207968,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456221.1",
+            "start": 0,
+            "end": 206961,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "JH584297.1",
+            "start": 0,
+            "end": 205776,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "JH584296.1",
+            "start": 0,
+            "end": 199368,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456354.1",
+            "start": 0,
+            "end": 195993,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "JH584294.1",
+            "start": 0,
+            "end": 191905,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "JH584298.1",
+            "start": 0,
+            "end": 184189,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "JH584300.1",
+            "start": 0,
+            "end": 182347,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456219.1",
+            "start": 0,
+            "end": 175968,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456210.1",
+            "start": 0,
+            "end": 169725,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "JH584303.1",
+            "start": 0,
+            "end": 158099,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "JH584302.1",
+            "start": 0,
+            "end": 155838,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456212.1",
+            "start": 0,
+            "end": 153618,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "JH584304.1",
+            "start": 0,
+            "end": 114452,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456379.1",
+            "start": 0,
+            "end": 72385,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456216.1",
+            "start": 0,
+            "end": 66673,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456393.1",
+            "start": 0,
+            "end": 55711,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456366.1",
+            "start": 0,
+            "end": 47073,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456367.1",
+            "start": 0,
+            "end": 42057,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456239.1",
+            "start": 0,
+            "end": 40056,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456213.1",
+            "start": 0,
+            "end": 39340,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456383.1",
+            "start": 0,
+            "end": 38659,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456385.1",
+            "start": 0,
+            "end": 35240,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456360.1",
+            "start": 0,
+            "end": 31704,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456378.1",
+            "start": 0,
+            "end": 31602,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456389.1",
+            "start": 0,
+            "end": 28772,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456372.1",
+            "start": 0,
+            "end": 28664,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456370.1",
+            "start": 0,
+            "end": 26764,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456381.1",
+            "start": 0,
+            "end": 25871,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456387.1",
+            "start": 0,
+            "end": 24685,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456390.1",
+            "start": 0,
+            "end": 24668,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456394.1",
+            "start": 0,
+            "end": 24323,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456392.1",
+            "start": 0,
+            "end": 23629,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456382.1",
+            "start": 0,
+            "end": 23158,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456359.1",
+            "start": 0,
+            "end": 22974,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456396.1",
+            "start": 0,
+            "end": 21240,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "GL456368.1",
+            "start": 0,
+            "end": 20208,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "JH584292.1",
+            "start": 0,
+            "end": 14945,
+            "reversed": false,
+            "assemblyName": "mm10"
+          },
+          {
+            "refName": "JH584295.1",
+            "start": 0,
+            "end": 1976,
+            "reversed": false,
+            "assemblyName": "mm10"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "uy05pRb5X",
+            "type": "QuantitativeTrack",
+            "configuration": "mii_#1-1646730823837",
+            "displays": [
+              {
+                "id": "zesvn1DJq0",
+                "type": "LinearWiggleDisplay",
+                "height": 30,
+                "configuration": "mii_#1-1646730823837-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {
+                  "max": 0.5
+                }
+              }
+            ]
+          },
+          {
+            "id": "f5P64HOW6",
+            "type": "QuantitativeTrack",
+            "configuration": "mii_#2-1646731359915",
+            "displays": [
+              {
+                "id": "9F0_ubXmdL",
+                "type": "LinearWiggleDisplay",
+                "height": 30,
+                "configuration": "mii_#2-1646731359915-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {
+                  "max": 0.5
+                }
+              }
+            ]
+          },
+          {
+            "id": "RtlB8-Wug",
+            "type": "QuantitativeTrack",
+            "configuration": "2c_18hpi_#1-1646731424804",
+            "displays": [
+              {
+                "id": "8rh0GW43Xk",
+                "type": "LinearWiggleDisplay",
+                "height": 30,
+                "configuration": "2c_18hpi_#1-1646731424804-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {
+                  "max": 0.5
+                }
+              }
+            ]
+          },
+          {
+            "id": "bQ-bV_9NDvY",
+            "type": "QuantitativeTrack",
+            "configuration": "2c_18hpi_#2-1646731463806",
+            "displays": [
+              {
+                "id": "CVFpKNMq_qn",
+                "type": "LinearWiggleDisplay",
+                "height": 30,
+                "configuration": "2c_18hpi_#2-1646731463806-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {
+                  "max": 0.5
+                }
+              }
+            ]
+          },
+          {
+            "id": "urO-UiZ9T",
+            "type": "QuantitativeTrack",
+            "configuration": "2c_control_#1-1646731560184",
+            "displays": [
+              {
+                "id": "uTa0V8ublr",
+                "type": "LinearWiggleDisplay",
+                "height": 30,
+                "configuration": "2c_control_#1-1646731560184-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {
+                  "max": 0.5
+                }
+              }
+            ]
+          },
+          {
+            "id": "lTMmBbaAPi",
+            "type": "QuantitativeTrack",
+            "configuration": "2c_control_#2-1646731588566",
+            "displays": [
+              {
+                "id": "sj1SQ06pza",
+                "type": "LinearWiggleDisplay",
+                "height": 30,
+                "configuration": "2c_control_#2-1646731588566-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {
+                  "max": 0.5
+                }
+              }
+            ]
+          },
+          {
+            "id": "9FKYP4neKfy",
+            "type": "QuantitativeTrack",
+            "configuration": "2c_no_injection_#1-1646731624702",
+            "displays": [
+              {
+                "id": "AjrO8ctLn3W",
+                "type": "LinearWiggleDisplay",
+                "height": 30,
+                "configuration": "2c_no_injection_#1-1646731624702-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {
+                  "max": 0.5
+                }
+              }
+            ]
+          },
+          {
+            "id": "9HoKZ-B1k",
+            "type": "QuantitativeTrack",
+            "configuration": "2c_no_injection_#2-1646731659961",
+            "displays": [
+              {
+                "id": "v3EPhbEL9x",
+                "type": "LinearWiggleDisplay",
+                "height": 30,
+                "configuration": "2c_no_injection_#2-1646731659961-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {
+                  "max": 0.5
+                }
+              }
+            ]
+          },
+          {
+            "id": "680Z3yfSQOJ",
+            "type": "QuantitativeTrack",
+            "configuration": "2c_h3.1/3.2_kd_#1-1646731725516",
+            "displays": [
+              {
+                "id": "ziMZ6XjkAMm",
+                "type": "LinearWiggleDisplay",
+                "height": 30,
+                "configuration": "2c_h3.1/3.2_kd_#1-1646731725516-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {
+                  "max": 0.5
+                }
+              }
+            ]
+          },
+          {
+            "id": "r69gTvHdZ5",
+            "type": "QuantitativeTrack",
+            "configuration": "2c_h3.1/3.2_kd_#2-1646731758809",
+            "displays": [
+              {
+                "id": "SEMvnKRxj5",
+                "type": "LinearWiggleDisplay",
+                "height": 30,
+                "configuration": "2c_h3.1/3.2_kd_#2-1646731758809-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {
+                  "max": 0.5
+                }
+              }
+            ]
+          },
+          {
+            "id": "10npDgXp3_X",
+            "type": "QuantitativeTrack",
+            "configuration": "2c_dna(-)_#1-1646731806319",
+            "displays": [
+              {
+                "id": "5GRP_SzOzIY",
+                "type": "LinearWiggleDisplay",
+                "height": 30,
+                "configuration": "2c_dna(-)_#1-1646731806319-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {
+                  "max": 0.5
+                }
+              }
+            ]
+          },
+          {
+            "id": "a69ANWpuP",
+            "type": "QuantitativeTrack",
+            "configuration": "2c_dna(-)_#2-1646731833444",
+            "displays": [
+              {
+                "id": "-wKc2E4-0X",
+                "type": "LinearWiggleDisplay",
+                "height": 30,
+                "configuration": "2c_dna(-)_#2-1646731833444-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {
+                  "max": 0.5
+                }
+              }
+            ]
+          },
+          {
+            "id": "Nxyiv1ppNM",
+            "type": "FeatureTrack",
+            "configuration": "mus_musculus.grcm38.102.sorted.gene_and_nc.gff3.gz-1646730516181",
+            "displays": [
+              {
+                "id": "x-gdYTS-P",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "trackShowDescriptions": false,
+                "configuration": "mus_musculus.grcm38.102.sorted.gene_and_nc.gff3.gz-1646730516181-LinearBasicDisplay"
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "trackSelectorType": "hierarchical",
+        "trackLabels": "overlapping",
+        "showCenterLine": false,
+        "showCytobandsSetting": true
+      }
+    ],
+    "widgets": {
+      "hierarchicalTrackSelector": {
+        "id": "hierarchicalTrackSelector",
+        "type": "HierarchicalTrackSelectorWidget",
+        "collapsed": {},
+        "filterText": "",
+        "view": "-rX1iDP1R"
+      },
+      "addTrackWidget": {
+        "id": "addTrackWidget",
+        "type": "AddTrackWidget",
+        "view": "O2CyRtjXp"
+      },
+      "baseFeature": {
+        "id": "baseFeature",
+        "type": "BaseFeatureWidget",
+        "featureData": {
+          "source": "havana",
+          "type": "pseudogene",
+          "start": 71980091,
+          "end": 71980634,
+          "strand": -1,
+          "phase": 0,
+          "refName": "10",
+          "id": "gene:ENSMUSG00000043859",
+          "name": "1700049L16Rik",
+          "biotype": "processed_pseudogene",
+          "description": "RIKEN cDNA 1700049L16 gene [Source:MGI Symbol;Acc:MGI:1920633]",
+          "gene_id": "ENSMUSG00000043859",
+          "havana_gene": "OTTMUSG00000064753",
+          "havana_version": "1",
+          "logic_name": "havana_mus_musculus",
+          "version": "5",
+          "uniqueId": "1736393902-offset-58808070"
+        },
+        "view": "-rX1iDP1R"
+      },
+      "configEditor": {
+        "id": "configEditor",
+        "type": "ConfigurationEditorWidget",
+        "target": "mus_musculus.grcm38.102.sorted.gene_and_nc.gff3.gz-1646730516181"
+      },
+      "pluginStoreWidget": {
+        "id": "pluginStoreWidget",
+        "type": "PluginStoreWidget",
+        "filterText": ""
+      },
+      "aboutWidget": {
+        "id": "aboutWidget",
+        "type": "AboutWidget"
+      }
+    },
+    "activeWidgets": {},
+    "connectionInstances": [],
+    "sessionAssemblies": [],
+    "minimized": false,
+    "drawerPosition": "right"
+  }
+}

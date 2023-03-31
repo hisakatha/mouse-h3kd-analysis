@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="Mus_musculus.GRCm38.dna_sm.primary_assembly.fa" locus="1:22499999-24000000" nextAutoscaleGroup="3" version="8">
+    <Resources>
+        <Resource path="read_template.NoRibs_2c_Control201209.bed.cpm.bigWig" type="bigwig"/>
+        <Resource path="read_template.NoRibs_2c_Noinjection201218.bed.cpm.bigWig" type="bigwig"/>
+        <Resource path="read_template.NoRibs_2c_18hpi201209.bed.cpm.bigWig" type="bigwig"/>
+        <Resource path="read_template.NoRibs_2c_Aphidicoilin201218.bed.cpm.bigWig" type="bigwig"/>
+        <Resource path="read_template.NoRibs_2c_Control201218.bed.cpm.bigWig" type="bigwig"/>
+        <Resource path="mm10.fa.out.ensemble_name.bed.gz" type="bed"/>
+        <Resource path="read_template.NoRibs_2c_Noinjection201209.bed.cpm.bigWig" type="bigwig"/>
+        <Resource path="read_template.NoRibs_2c_18hpi201218.bed.cpm.bigWig" type="bigwig"/>
+        <Resource path="read_template.NoRibs_MII201218.bed.cpm.bigWig" type="bigwig"/>
+        <Resource path="Mus_musculus.GRCm38.102.sorted.gene_and_nc.merged.sorted.slop10k.merged.bed" type="bed"/>
+        <Resource path="read_template.NoRibs_2cAphidicolin201209.bed.cpm.bigWig" type="bigwig"/>
+        <Resource path="read_template.NoRibs_2c_H3_1_3_2KD201209.bed.cpm.bigWig" type="bigwig"/>
+        <Resource path="Mus_musculus.GRCm38.102.sorted.gene_and_nc.gff3.gz" type="gff3"/>
+        <Resource path="read_template.NoRibs_2c_H3_1_3_2KD201218.bed.cpm.bigWig" type="bigwig"/>
+        <Resource path="read_template.NoRibs_MII201209.bed.cpm.bigWig" type="bigwig"/>
+    </Resources>
+    <Panel height="693" name="DataPanel" width="1055">
+        <Track attributeKey="Reference sequence" clazz="org.broad.igv.track.SequenceTrack" fontSize="14" id="Reference sequence" name="Reference sequence" sequenceTranslationStrandValue="POSITIVE" shouldShowTranslation="false" visible="true"/>
+        <Track attributeKey="read_template.NoRibs_MII201209.bed.cpm.bigWig" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="14" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_MII201209.bed.cpm.bigWig" name="MII #1" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="0.5" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_MII201218.bed.cpm.bigWig" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="14" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_MII201218.bed.cpm.bigWig" name="MII #2" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="0.5" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_18hpi201209.bed.cpm.bigWig" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="14" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_18hpi201209.bed.cpm.bigWig" name="2C 18hpi #1" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="0.5" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_18hpi201218.bed.cpm.bigWig" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="14" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_18hpi201218.bed.cpm.bigWig" name="2C 18hpi #2" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="0.5" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_Noinjection201209.bed.cpm.bigWig" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="14" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_Noinjection201209.bed.cpm.bigWig" name="2C No Injection #1" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="0.5" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_Noinjection201218.bed.cpm.bigWig" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="14" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_Noinjection201218.bed.cpm.bigWig" name="2C No Injection #2" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="0.5" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_Control201209.bed.cpm.bigWig" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="14" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_Control201209.bed.cpm.bigWig" name="2C Control #1" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="0.5" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_Control201218.bed.cpm.bigWig" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="14" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_Control201218.bed.cpm.bigWig" name="2C Control #2" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="0.5" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_H3_1_3_2KD201209.bed.cpm.bigWig" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="14" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_H3_1_3_2KD201209.bed.cpm.bigWig" name="2C H3.1/3.2 KD #1" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="0.5" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_H3_1_3_2KD201218.bed.cpm.bigWig" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="14" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_H3_1_3_2KD201218.bed.cpm.bigWig" name="2C H3.1/3.2 KD #2" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="0.5" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2cAphidicolin201209.bed.cpm.bigWig" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="14" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2cAphidicolin201209.bed.cpm.bigWig" name="2C DNA(-) #1" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="0.5" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="read_template.NoRibs_2c_Aphidicoilin201218.bed.cpm.bigWig" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="14" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/read_template.NoRibs_2c_Aphidicoilin201218.bed.cpm.bigWig" name="2C DNA(-) #2" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="0.5" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="Mus_musculus.GRCm38.102.sorted.gene_and_nc.gff3.gz" clazz="org.broad.igv.track.FeatureTrack" displayMode="EXPANDED" featureVisibilityWindow="130540593" fontSize="14" groupByStrand="false" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view/Mus_musculus.GRCm38.102.sorted.gene_and_nc.gff3.gz" name="Genes and ncRNAs" visible="true"/>
+        <Track attributeKey="Mus_musculus.GRCm38.102.sorted.gene_and_nc.merged.sorted.slop10k.merged.bed" clazz="org.broad.igv.track.FeatureTrack" colorScale="ContinuousColorScale;0.0;41.0;255,255,255;0,0,178" displayMode="SQUISHED" fontSize="14" groupByStrand="false" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view2/Mus_musculus.GRCm38.102.sorted.gene_and_nc.merged.sorted.slop10k.merged.bed" name="Genes and ncRNAs (+/- 10k)" visible="true"/>
+        <Track attributeKey="mm10.fa.out.ensemble_name.bed.gz" clazz="org.broad.igv.track.FeatureTrack" featureVisibilityWindow="1000000000" fontSize="14" groupByStrand="false" id="/home/hisakatha/research/mouse_rnaseq_h3kd/genome_view2/mm10.fa.out.ensemble_name.bed.gz" name="Repeat elements" visible="true"/>
+    </Panel>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>
