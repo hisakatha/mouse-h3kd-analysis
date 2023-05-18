@@ -24,6 +24,7 @@ rsync -avRm\
     -f "+ /*/"\
     -f "+ configs/"\
     -f "+ hicrep/"\
+    -f "+ hicrep_incl_gse82185_r_10k/"\
     -f "+ read_vs_feature/"\
     -f "- .*"\
     -f "+ *.sh"\
