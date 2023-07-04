@@ -213,3 +213,7 @@ tad_counts["frac_ge_thres"] = tad_counts["num_ge_thres"] / tad_counts["total"]
 #plt.legend([f"TAD strength < {domain_score_thres}", f"TAD strength ≧ {domain_score_thres}"], loc="lower left")
 tad_counts.plot.bar(x="Sample", y=["frac_ge_thres"], ylabel=f"Proportion of TAD strengths ≧ {domain_score_thres}", stacked=True, rot=0, legend=False)
 plt.savefig("tad_strength.proportion_w_thres.svg")
+
+plt.figure()
+tad_counts.plot.bar(x="Sample", y=["num_ge_thres"], ylabel=f"The number of TAD strengths ≧ {domain_score_thres}", stacked=True, rot=0, legend=False)
+plt.savefig("tad_strength.num_ge_thres.svg")
