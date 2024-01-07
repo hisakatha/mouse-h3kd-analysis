@@ -21,8 +21,9 @@ rsync -avRm\
 
 rsync -avRm\
     -f "+ /*/"\
-    -f "+ tad_strength_back1_w_balancing/"\
+    -f "+ tad_strength_w_balancing/"\
     -f "+ tad_strength_back2_w_balancing_wo_diagonal/"\
+    -f "+ tad_strength_back3_wo_balancing/"\
     -f "- .*"\
     -f "+ *.sh"\
     -f "+ *.py"\

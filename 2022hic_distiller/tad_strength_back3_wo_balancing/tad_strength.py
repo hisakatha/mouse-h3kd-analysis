@@ -19,11 +19,7 @@ from coolpuppy.lib.numutils import get_domain_score
 from coolpuppy.lib.puputils import accumulate_values
 from coolpuppy import plotpup
 import cooler
-#import bioframe
-#import cooltools
-#from cooltools.lib import io
 from cooltools import expected_cis
-#from cooltools.lib import plotting
 from itertools import compress
 from scipy import stats
 import seaborn as sns
@@ -37,10 +33,12 @@ def extra_sum_func(dict1, dict2):
     return accumulate_values(dict1, dict2, 'domain_score')
 
 def get_tad_strength(mcool_path, resolution, pileup_size, chrom_arms, tads):
+    """Get TAD strengths from a contact matrix without matrix balancing
+    """
     clr = cooler.Cooler(f"{mcool_path}::resolutions/{resolution}")
     expected = expected_cis(clr, ignore_diags=0, view_df=chrom_arms, chunksize=1000000)
     cc = coolpup.CoordCreator(tads, resolution=resolution, features_format='bed', local=True, rescale_flank=1)
-    pu = coolpup.PileUpper(clr, cc, expected=expected, view_df=chrom_arms, ignore_diags=0, rescale_size=pileup_size, rescale=True)
+    pu = coolpup.PileUpper(clr, cc, expected=expected, view_df=chrom_arms, ignore_diags=0, rescale_size=pileup_size, rescale=True, clr_weight_name=False, expected_value_col="count.avg")
     pup = pu.pileupsWithControl(postprocess_func=add_domain_score,
                             extra_sum_funcs={'domain_score': extra_sum_func})
     return pup
@@ -52,7 +50,7 @@ def get_tad_strength(mcool_path, resolution, pileup_size, chrom_arms, tads):
 #chrom_arms = bioframe.make_viewframe(chrom_arms)
 chrom_arms = None
 
-tads = pd.read_table("./GSE63525_mouse_lymphoblasts_Arrowhead_domainlist.txt.mm10.bed", names=["chrom", "start", "end"])
+tads = pd.read_table("../GSE63525_mouse_lymphoblasts_Arrowhead_domainlist.txt.mm10.bed", names=["chrom", "start", "end"])
 
 ensembl_mm10_from_ucsc = {
     "chr1": "1",
@@ -84,9 +82,9 @@ tads["chrom"] = tads["chrom"].map(ensembl_mm10_from_ucsc)
 resolution = 10000
 pileup_size = 99
 
-clr_path_2c_17hpi = "./coolers_library_group/2c_17hpi.mm10.no_filter.1000.mcool"
-clr_path_2c_control = "./coolers_library_group/2c_control.mm10.no_filter.1000.mcool"
-clr_path_2c_h3kd = "./coolers_library_group/2c_H3-1_and_3-2KD.mm10.no_filter.1000.mcool"
+clr_path_2c_17hpi = "../coolers_library_group/2c_17hpi.mm10.no_filter.1000.mcool"
+clr_path_2c_control = "../coolers_library_group/2c_control.mm10.no_filter.1000.mcool"
+clr_path_2c_h3kd = "../coolers_library_group/2c_H3-1_and_3-2KD.mm10.no_filter.1000.mcool"
 clr_paths = {
     "Early 2-cell": clr_path_2c_17hpi,
     "Late 2-cell Control": clr_path_2c_control,
@@ -110,6 +108,7 @@ if not os.path.exists(pups_path):
 else:
     pups = pd.read_pickle(pups_path)
 
+#plt.rcParams['figure.constrained_layout.use'] = True
 plotpup.plot(pups, height=height, cols="Sample", col_order=samples, score="", plot_ticks=False)
 plt.annotate("Enrichment", xy=(0.999, 0.5), xycoords="figure fraction", rotation=270, ha="right", va="center")
 plt.savefig("tad_strength.heatmap.svg")
@@ -118,10 +117,11 @@ plotpup.plot(pups, height=height, cols="Sample", col_order=samples, score="", pl
 plt.annotate("Enrichment", xy=(0.999, 0.5), xycoords="figure fraction", rotation=270, ha="right", va="center")
 plt.savefig("tad_strength.heatmap_vmax2.svg")
 
-plotpup.plot(pups, height=height, cols="Sample", col_order=samples, score="", plot_ticks=False, vmax=1.5)
+plotpup.plot(pups, height=height, cols="Sample", col_order=samples, score="", plot_ticks=False, vmax=4)
 plt.annotate("Enrichment", xy=(0.999, 0.5), xycoords="figure fraction", rotation=270, ha="right", va="center")
-plt.savefig("tad_strength.heatmap_vmax1.5.svg")
+plt.savefig("tad_strength.heatmap_vmax4.svg")
 
+#plt.rcParams['figure.constrained_layout.use'] = False
 pups["domain_score_finite"] = pups["domain_score"].apply(lambda x: list(compress(x, np.isfinite(x))))
 pups["domain_score_finite_mean"] = pups["domain_score_finite"].apply(np.mean)
 
@@ -185,7 +185,6 @@ plt.figure()
 sns.ecdfplot(pups_long, hue="Sample", x="domain_score_finite", linestyle="-")
 plt.xlabel("TAD strength")
 plt.xlim(0, 4)
-#plt.ylabel("Cumulative probability")
 plt.savefig("tad_strength.ecdf.svg")
 
 # Proportion of TAD strength larger than a threshold
@@ -213,6 +212,9 @@ tad_counts["frac_ge_thres"] = tad_counts["num_ge_thres"] / tad_counts["total"]
 #plt.legend([f"TAD strength < {domain_score_thres}", f"TAD strength ≧ {domain_score_thres}"], loc="lower left")
 tad_counts.plot.bar(x="Sample", y=["frac_ge_thres"], ylabel=f"Proportion of TAD strengths ≧ {domain_score_thres}", stacked=True, rot=0, legend=False)
 plt.savefig("tad_strength.proportion_w_thres.svg")
+
+print("TAD strength table:")
+print(tad_counts.to_csv())
 
 plt.figure()
 tad_counts.plot.bar(x="Sample", y=["num_ge_thres"], ylabel=f"The number of TAD strengths ≧ {domain_score_thres}", stacked=True, rot=0, legend=False)
